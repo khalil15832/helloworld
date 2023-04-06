@@ -32,6 +32,12 @@
         <configuration>
           <source>${jdk.version}</source>
           <target>${jdk.version}</target>
+          <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <mainClass>com.coveros.demo</mainClass>
+          </manifest>
+        </archive>
         </configuration>
       </plugin>
     </plugins>
