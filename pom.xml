@@ -36,6 +36,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <mainClass>com.coveros.demo</mainClass>
+            <layout>JAR</layout>
           </manifest>
         </archive>
         </configuration>
