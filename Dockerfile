@@ -1,9 +1,4 @@
-FROM maven as build
-WORKDIR /app
-COPY . .
-RUN mvn install
-
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11.0
 WORKDIR /app
 COPY --from=build /app/target/helloworld.jar /app/
 EXPOSE 9090
